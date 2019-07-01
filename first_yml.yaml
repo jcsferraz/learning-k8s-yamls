@@ -1,0 +1,102 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  generateName: coy-oyster-metrics-server-6db7f86cc4-
+  labels:
+    app: metrics-server
+    pod-template-hash: 6db7f86cc4
+    release: coy-oyster
+  name: coy-oyster-metrics-server-6db7f86cc4-fv5mw
+  namespace: default
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: coy-oyster-metrics-server-6db7f86cc4
+    uid: b98f002c-7a91-11e9-8b45-023071fde3cc
+  resourceVersion: "200209"
+  selfLink: /api/v1/namespaces/default/pods/coy-oyster-metrics-server-6db7f86cc4-fv5mw
+  uid: b9913bcf-7a91-11e9-8b45-023071fde3cc
+spec:
+  affinity: {}
+  containers:
+  - command:
+    - /metrics-server
+    - --cert-dir=/tmp
+    - --logtostderr
+    - --secure-port=8443
+    - --kubelet-insecure-tls
+    - --kubelet-preferred-address-types=InternalIP
+    image: gcr.io/google_containers/metrics-server-amd64:v0.3.2
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /healthz
+        port: https
+        scheme: HTTPS
+      initialDelaySeconds: 20
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    name: metrics-server
+    ports:
+    - containerPort: 8443
+      name: https
+      protocol: TCP
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /healthz
+        port: https
+        scheme: HTTPS
+      initialDelaySeconds: 20
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    resources: {}
+    securityContext:
+      allowPrivilegeEscalation: false
+      capabilities:
+        drop:
+        - all
+      procMount: Default
+      readOnlyRootFilesystem: true
+      runAsGroup: 10001
+      runAsNonRoot: true
+      runAsUser: 10001
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /tmp
+      name: tmp
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: coy-oyster-metrics-server-token-dmszf
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: k8s-node1
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: coy-oyster-metrics-server
+  serviceAccountName: coy-oyster-metrics-server
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - emptyDir: {}
+    name: tmp
+  - name: coy-oyster-metrics-server-token-dmszf
+    secret:
+      defaultMode: 420
+      secretName: coy-oyster-metrics-server-token-dmszf
