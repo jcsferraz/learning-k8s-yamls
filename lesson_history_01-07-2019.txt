@@ -1,0 +1,1000 @@
+   84  kubectl get pod --all-namespaces -o wide
+   85  kubectl get pod --all-namespaces -o wide --show-labels 
+   86  kubeadm token create --print-join-command
+   87  htop
+   88  history 
+   89  docker ps -a
+   90  kubectl get nodes
+   91  kubectl get pods -a -o wide
+   92  kubectl get pods -o wide
+   93  kubectl get pod -o wide
+   94  kubectl get pod --all-namespaces -o wide
+   95  htop
+   96  kubectl get nodes
+   97  kubectl get nodes --show-labels 
+   98  ]
+   99  df -h 
+  100  ls
+  101  kubectl get nodes 
+  102  w
+  103  htop
+  104  kubectl get pods 
+  105  kubectl get pods --all-namespaces 
+  106  kubectl get events 
+  107  kubectl get events --all-namespaces 
+  108  kubectl get event
+  109  kubectl logs --all-containers 
+  110  kubectl logs -n kube-system etcd-k8s-master 
+  111  kubectl logs -n kube-system etcd-k8s-master -f
+  112  kubectl logs -n kube-system weave-net-hhp7k 
+  113  kubectl logs -n kube-system weave-net-hhp7k weave
+  114  kubectl logs -n kube-system weave-net-hhp7k weave -f
+  115  ifconfig 
+  116  route -n
+  117  ifconfig -a
+  118  htop
+  119  curl 
+  120  https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > 
+  121  curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > 
+  122  curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > get_helm.sh; chmod 700 get_helm.sh; ./get_helm.sh
+  123  helm init
+  124  kubectl get pods --all-namespaces 
+  125  htop
+  126  helm search aws
+  127  kubectl search metrics-server
+  128  helm search metrics
+  129  helm install stable/metrics-server
+  130  helm install metrics-server
+  131  helm repo update
+  132  helm install metrics-server
+  133  helm install stable/metrics-server
+  134  helm version
+  135  htop
+  136  helm list
+  137  kubectl --namespace kube-system create serviceaccount tiller
+  138  kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
+  139  helm init --service-account tiller --upgrade
+  140  kubectl get pod --all-namespaces 
+  141  helm list
+  142  helm install stable/metrics-server
+  143  kubectl get pod --all-namespaces 
+  144  helm list
+  145  helm search metrics-server
+  146  kubectl get pod -n default 
+  147  kubectl top node
+  148  kubectl get pod -n default 
+  149  kubectl top node
+  150  kubectl top nodes
+  151  kubectl top node
+  152  kubectl top nodes
+  153  kubectl logs -n default coy-oyster-metrics-server-d68bf6799-4dmhh metrics-server 
+  154  kubectl logs -n default coy-oyster-metrics-server-d68bf6799-4dmhh metrics-server -f
+  155  kubectl top nodes
+  156  kubectl get deployments -n default 
+  157  kubectl edit deployments -n default coy-oyster-metrics-server 
+  158  kubectl get deployments -n default 
+  159  kubectl top nodes
+  160  kubectl logs -n default coy-oyster-metrics-server-d68bf6799-4dmhh metrics-server -f
+  161  kubectl get pod -n default 
+  162  kubectl logs -n default coy-oyster-metrics-server-d68bf6799-4dmhh metrics-server -f
+  163  kubectl get pod -n default 
+  164  kubectl logs -n default coy-oyster-metrics-server-6db7f86cc4-fv5mw metrics-server -f
+  165  kubectl logs -n default coy-oyster-metrics-server-6db7f86cc4-fv5mw metrics-server 
+  166  kubectl logs -n default coy-oyster-metrics-server-6db7f86cc4-fv5mw metrics-server -f
+  167  kubectl top node
+  168  kubectl get --raw /apis/metrics.k8s.io/v1beta1 
+  169  htop
+  170  kubectl get namespaces 
+  171  kubectl describe namespaces kube-node-lease 
+  172  kubectl top nodes
+  173  htop
+  174  kubectl get deployments
+  175  kubectl get deployments --all-namespaces 
+  176  kubectl get po --all-namespaces 
+  177  kubectl get rc --all-namespaces 
+  178  kubectl get rs --all-namespaces 
+  179  kubectl get ds --all-namespaces 
+  180  kubectl get svc --all-namespaces 
+  181  kubectl get ds --all-namespaces 
+  182  kubectl describe nodes k8s-node0 
+  183  kubectl describe nodes |grep -A 4 "Allocated resources"
+  184  htop
+  185  helm search nginx
+  186  helm search test
+  187  helm search busy
+  188  helm search busybox
+  189  helm search box
+  190  helm search echo
+  191  helm search sonarqube
+  192  helm search lego
+  193  helm search autoscaler
+  194  htop
+  195  kubectl get rs --all-namespaces 
+  196  kubectl describe rs -n kube-system coredns-fb8b8dccf 
+  197  htop
+  198  kubectl scale deployment --replicas=5 coy-oyster-metrics-server 
+  199  kubectl get deploy -n kube-system 
+  200  kubectl get deploy -n default 
+  201  kubectl describe rs -n default 
+  202  kubectl get deploy -n default 
+  203  kubectl get pod -n default 
+  204  kubectl top nodes
+  205  kubectl top nodes -o wide
+  206  kubectl get pod -n default -o wide
+  207  htop
+  208  kubectl scale deployment --replicas=2 -n default coy-oyster-metrics-server 
+  209  kubectl get pod --all-namespaces -o wide
+  210  kubectl get pod --all-namespaces -o wide --watch
+  211  netstat -atunp
+  212  netstat -atunp|grep 6443
+  213  kubectl get pod --all-namespaces -o wide --watch
+  214  kubectl get deployments -n default coy-oyster-metrics-server -o yaml
+  215  htop
+  216  w
+  217  hyop
+  218  htop
+  219  shutdown -h now
+  220  htop
+  221  kubectl get nodes 
+  222  kubectl get pod --all-namespaces 
+  223  htop
+  224  kubectl get nodes
+  225  htop
+  226  kubectl get nodes
+  227  kubectl get nodes --watch
+  228  kubectl get pod --all-namespaces 
+  229  kubectl logs -n default coy-oyster-metrics-server-6db7f86cc4-fv5mw metrics-server -f
+  230  kubectl delete -f first_service_yml.yaml 
+  231  kubectl get svc --all-namespaces 
+  232  kubectl expose deployment nginx --type=NodePort 
+  233  kubectl delete deployments nginx-errado 
+  234  kubectl get svc --all-namespaces 
+  235  kubectl get ep
+  236  curl 10.109.142.29
+  237  kubectl get nodes 
+  238  kubectl get nodes -o wide
+  239  kubectl logs nginx-755464dd6c-5j6qq -f 
+  240  kubectl logs nginx-755464dd6c-qsx6p -f 
+  241  kubectl logs nginx-755464dd6c-5j6qq -f 
+  242  kubectl logs nginx-755464dd6c-qsx6p 
+  243  kubectl logs nginx-755464dd6c-qsx6p -f
+  244  htop
+  245  kubectl logs nginx-755464dd6c-qsx6p -f
+  246  ls
+  247  vi first_service_yml_node-port.yaml 
+  248  cat first_service_yml.yaml > first_service_yml_node-port.yaml
+  249  vi $_
+  250  vi first_service_yml_node-port.yaml
+  251  kubectl get svc 
+  252  kubectl get svc nginx -o yaml > first_service_yml_node-port.yaml 
+  253  vi first_service_yml_node-port.yaml 
+  254  htop
+  255  kubectl get svc nginx -o yaml 
+  256  vi first_service_yml_node-port.yaml 
+  257  kubectl get svc 
+  258  htop
+  259  kubectl delete svc nginx -n default 
+  260  kubectl get svc 
+  261  kubectl create -f first_service_yml_node-port.yaml 
+  262  kubectl get svc 
+  263  kubectl get ep
+  264  kubectl describe svc nginx-nodeport 
+  265  kubectl get nodes -o wide
+  266  h
+  267  kubectl logs nginx-755464dd6c-qsx6p -f
+  268  kubectl logs nginx-755464dd6c-f6zc7 -f
+  269  kubectl logs nginx-755464dd6c-5j6qq -f
+  270  kubectl logs nginx-755464dd6c-f6zc7 -f
+  271  kubectl logs nginx-755464dd6c-qsx6p -f
+  272  kubectl logs nginx-755464dd6c-f6zc7 -f
+  273  kubectl logs nginx-755464dd6c-5j6qq -f
+  274  kubectl logs nginx-755464dd6c-f6zc7 -f
+  275  kubectl logs nginx-755464dd6c-qsx6p -f
+  276  kubectl get nodes -o wide
+  277  kubectl get pod --all-namespaces 
+  278  htop
+  279  kubectl edit svc nginx-nodeport 
+  280  kubectl get svc 
+  281  htop
+  282  kubectl logs nginx-755464dd6c-5j6qq -f
+  283  kubectl logs nginx-755464dd6c-qsx6p -f
+  284  kubectl logs nginx-755464dd6c-f6zc7 -f
+  285  kubectl logs nginx-755464dd6c-5j6qq -f
+  286  kubectl logs nginx-755464dd6c-qsx6p -f
+  287  htop
+  288  htop
+  289  kubectl get nodes
+  290  htop
+  291  kubectl get nodes
+  292  kubectl get pod --all-namespaces 
+  293  kubectl top node
+  294  htop
+  295  kubectl get pod --all-namespaces -o wide
+  296  htop
+  297  kubectl get pod coy-oyster-metrics-server-6db7f86cc4-fv5mw -o yaml
+  298  kubectl get pod coy-oyster-metrics-server-6db7f86cc4-fv5mw -o yaml > first_yml.yaml
+  299  vi first_yml.yaml 
+  300  kubectl get service
+  301  curl 10.103.132.47
+  302  kubectl run nginx --image=nginx --port 80
+  303  kubectl get service
+  304  kubectl get pod --all-namespaces -o wide
+  305  kubectl get deployments --all-namespaces 
+  306  kubectl get pod --all-namespaces -o wide
+  307  kubectl get service --all-namespaces 
+  308  kubectl run nginx --image=nginx --port=80
+  309  kubectl get service --all-namespaces 
+  310  kubectl get service -n default 
+  311  kubectl get pod --all-namespaces -o wide
+  312  kubectl get svc
+  313  kubectl get svc --all-namespaces 
+  314  kubectl expose deployment nginx -n default 
+  315  kubectl get svc --all-namespaces 
+  316  curl 10.97.24.194
+  317  htop
+  318  kubectl get pod nginx-755464dd6c-qsx6p -o yaml
+  319  curl -I 10.97.24.194
+  320  curl -Ivk 10.97.24.194
+  321  htop
+  322  kubectl get service
+  323  kubectl logs -f nginx-755464dd6c-qsx6p 
+  324  htop
+  325  kubectl delete service nginx -n default 
+  326  vi first_yml.yaml 
+  327  vi firs_service_yml.yaml
+  328  vi first_service_yml.yaml
+  329  htop
+  330  vi first_service_yml.yaml
+  331  htop
+  332  kubectl create -f first_service_yml.yaml 
+  333  vi first_service_yml.yaml 
+  334  kubectl create -f first_service_yml.yaml 
+  335  kubectl get svc -n default
+  336  curl -Ivk 10.102.186.69
+  337  kubectl describe service nginx-cluster-ip 
+  338  kubectl get endpoints 
+  339  curl -Ivk 10.47.0.1:8443
+  340  kubectl scale deployment --replicas=3 nginx 
+  341  kubectl get endpoints 
+  342  kubectl get svc
+  343  htop
+  344  kubectl delete -f first_service_yml.yaml 
+  345  vi first_service_yml.yaml 
+  346  kubectl create -f first_service_yml.yaml 
+  347  kubectl get svc 
+  348  kubectl get ep
+  349  kubectl run nginx-errado --image=nginx 
+  350  kubectl get ep
+  351  kubectl describe svc nginx-cluster-ip 
+  352  kubectl scale deployment --replicas=3 nginx-errado 
+  353  kubectl describe svc nginx-cluster-ip 
+  354  curl -Ivk 10.44.0.3
+  355  curl -Ivk 10.44.0.4
+  356  curl -Ivk 10.47.0.5
+  357  kubectl logs deployment/nginx-errado -n default -f
+  358  kubectl logs deployment/nginx -n default -f
+  359  htop
+  360  kubectl delete -f first_service_yml.yaml 
+  361  vi first_service_yml.yaml 
+  362  kubectl get svc
+  363  kubectl get svc --all-namespaces 
+  364  vi first_service_yml.yaml 
+  365  kubectl create -f first_service_yml.yaml 
+  366  kubectl get svc --all-namespaces 
+  367  kubectl describe svc nginx-cluster-ip 
+  368  curl 10.99.240.47 
+  369  kubectl logs deployment/nginx-errado -n default -f
+  370  curl 10.99.240.47 
+  371  kubectl logs deployment/nginx-errado -n default -f
+  372  curl 10.99.240.47 
+  373  kubectl logs deployment/nginx-errado -n default -f
+  374  curl 10.99.240.47:80
+  375  kubectl logs deployment/nginx-errado -n default -f
+  376  curl 10.99.240.47
+  377  kubectl logs deployment/nginx-errado -n default -f
+  378  kubectl logs pod/nginx-errado-5698b98986-t5lcb -n default -f
+  379  curl 10.99.240.47
+  380  kubectl logs deployment/nginx-errado -n default -f
+  381  vi first_service_yml.yaml 
+  382  kubectl describe svc nginx-cluster-ip 
+  383  curl 10.47.0.5
+  384  kubectl logs deployment/nginx-errado -n default -f
+  385  kubectl get deployments.
+  386  kubectl get svc --all-namespaces 
+  387  curl 10.99.240.47
+  388  kubectl get ep
+  389  kubectl logs -f nginx-errado-5698b98986-zfknh 
+  390  kubectl logs -f nginx-errado-5698b98986-t5lcb 
+  391  kubectl logs -f nginx-errado-5698b98986-5qg22 
+  392  curl 10.99.240.47
+  393  fg
+  394  curl 10.99.240.47
+  395  fg
+  396  curl 10.99.240.47
+  397  fg
+  398  curl 10.99.240.47
+  399  fg
+  400  kubectl logs -f nginx-errado-5698b98986-5qg22
+  401  kubectl logs -f nginx-errado-5698b98986-zfknh 
+  402  kubectl logs -f nginx-errado-5698b98986-t5lcb 
+  403  kubectl get pod --all-namespaces 
+  404  ls
+  405  htop
+  406  cp first_service_yml_node-port.yaml first_service_yml_load-balancer.yaml
+  407  vi first_service_yml_load-balancer.yaml 
+  408  kubectl get svc --all-namespaces 
+  409  htop
+  410  kubectl delete service nginx-nodeport -n default 
+  411  ls
+  412  vi first_service_yml_load-balancer.yaml 
+  413  kubectl create -f first_service_yml_load-balancer.yaml 
+  414  kubectl get svc --all-namespaces 
+  415  kubectl logs -f svc/nginx-load-balancer -n default
+  416  kubectl get svc --all-namespaces 
+  417  kubectl get pod --all-namespaces 
+  418  kubectl describe svc nginx-load-balancer 
+  419  kubectl get deployments -n default
+  420  kubectl get deployments --all-namespaces 
+  421  kubectl describe svc nginx-load-balancer 
+  422  kubectl get deployments --all-namespaces 
+  423  kubectl logs svc nginx-load-balancer 
+  424  kubectl logs service nginx-load-balancer 
+  425  kubectl get svc nginx-load-balancer 
+  426  kubectl get svc nginx-load-balancer -o wide
+  427  kubectl describe svc nginx-load-balancer -o wide
+  428  kubectl describe svc nginx-load-balancer 
+  429  vi first_service_yml_load-balancer.yaml 
+  430  kubectl delete -f first_service_yml_load-balancer.yaml
+  431  kubectl get svc nginx-load-balancer 
+  432  kubectl get svc --all-namespaces 
+  433  kubectl create -f first_service_yml_load-balancer.yaml 
+  434  kubectl get svc --all-namespaces 
+  435  vi first_service_yml_load-balancer.yaml 
+  436  kubectl get svc --all-namespaces 
+  437  vi first_service_yml_load-balancer.yaml 
+  438  htop
+  439  kubectl get svc --all-namespaces 
+  440  kubectl delete -f first_service_yml_load-balancer.yaml 
+  441  kubectl create -f first_service_yml_load-balancer.yaml 
+  442  kubectl get svc --all-namespaces 
+  443  kubectl describe svc nginx-load-balance
+  444  kubectl describe svc nginx-load-balancer
+  445  kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.0.0/docs/examples/rbac-role.yaml
+  446  kubectl get svc --all-namespaces 
+  447  kubectl get deployments --all-namespaces 
+  448  kubectl get pod --all-namespaces 
+  449  curl -sS "https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.0.0/docs/examples/alb-ingress-controller.yaml" > alb-ingress-controller.yaml
+  450  ls
+  451  vi alb-ingress-controller.yaml 
+  452  kubectl apply -f alb-ingress-controller.yaml
+  453  kubectl get deployments --all-namespaces 
+  454  kubectl logs -n kube-system $(kubectl get po -n kube-system | egrep -o alb-ingress[a-zA-Z0-9-]+)
+  455  kubectl get deployments --all-namespaces 
+  456  kubectl logs deployment/alb-ingress-controller -f 
+  457  kubectl logs deployment/alb-ingress-controller  
+  458  kubectl logs deployment/alb-ingress-controller -n kube-system  
+  459  kubectl describe pod -n kube-system alb-ingress-controller-6bf8fd49ff-bv7vl 
+  460  htop
+  461  kubectl describe pod -n kube-system alb-ingress-controller-6bf8fd49ff-bv7vl 
+  462  kubectl logs deployment/alb-ingress-controller -n kube-system  
+  463  kubectl delete pod -n kube-system alb-ingress-controller-6bf8fd49ff-bv7vl 
+  464  kubectl get deployments --all-namespaces 
+  465  kubectl get pod --all-namespaces 
+  466  htop
+  467  kubectl get deployments 
+  468  kubectl describe deployments nginx-limitado 
+  469  htop
+  470  kubectl get pods
+  471  kubectl exec -it nginx-limitado-77694bf84c-78kkf bash
+  472  htop
+  473  kubectl exec -it nginx-limitado-77694bf84c-78kkf bash
+  474  kubectl delete deployments nginx-limitado 
+  475  htop
+  476  kubectl get namespaces 
+  477  kubectl create namespace dev 
+  478  kubectl create namespace prd
+  479  kubectl create namespace hml
+  480  kubectl get namespaces 
+  481  vi deployment-limitado.yaml 
+  482  kubectl create -f deployment-limitado.yaml 
+  483  kubectl get deployment
+  484  kubectl get deployment -n dev
+  485  kubectl get deployment -n hml
+  486  htop
+  487  kubectl describe namespaces hml
+  488  htop
+  489  vi namespace-limitando-recursos-hml.yaml
+  490  htop
+  491  kubectl get limitranges 
+  492  kubectl create -f namespace-limitando-recursos-hml.yaml -n hml
+  493  kubectl get limitranges 
+  494  kubectl get limitranges -n hml 
+  495  kubectl describe namespaces hml
+  496  htop
+  497  ls -lhrt
+  498  vi pod_limitrange-hml.yaml 
+  499  ls -lhrt
+  500  htop
+  501  kubectl create -f pod_limitrange-hml.yaml -n hml
+  502  kubectl get pod -n hml 
+  503  vi pod_limitrange-hml.yaml 
+  504  kubectl get pod -h hml
+  505  kubectl get pod -n hml
+  506  kubectl describe pod -h hml limit-pod
+  507  kubectl describe pod -n hml limit-pod
+  508  ls
+  509  vi pod_limitrange-hml.yaml 
+  510  kubectl get pod -n hml
+  511  kubectl describe pod -n hml nginx-limitado-77694bf84c-qq5vs 
+  512  kubectl get pod -n hml limit-pod 
+  513  kubectl describe pod -n hml limit-pod 
+  514  htop
+  515  kubectl delete -f  pod pod_limitrange-hml.yaml 
+  516  kubectl delete  pod pod_limitrange-hml.yaml 
+  517  kubectl delete  pod pod_limitrange-hml.yaml -n hml
+  518  kubectl delete  pod_limitrange-hml.yaml -n hml
+  519  kubectl delete pod pod_limitrange-hml.yaml -h hml
+  520  kubectl delete pod pod_limitrange-hml.yaml -n hml
+  521  kubectl delete pod pod_limit -n hml
+  522  kubectl get pod -n hml
+  523  kubectl delete pod -n hml nginx-limitado-77694bf84c-qq5vs limit-pod 
+  524  kubectl get pod -n hml
+  525  kubectl get deployments -n hml
+  526  kubectl delete deployments -n hml nginx-limitado 
+  527  kubectl get pod -n hml
+  528  kubectl run nginx --image=nginx --replicas=3 
+  529  kubectl get pod 
+  530  kubectl get pod -n default 
+  531  kubectl get pod -n default -o wide
+  532  kubectl describe nodes k8s-master 
+  533  htop
+  534  kubectl taint node k8s-master node-role.kubernetes.io/master:NoSchedule-
+  535  kubectl describe nodes k8s-master 
+  536  kubectl taint node k8s-master node-role.kubernetes.io/master:NoSchedule
+  537  kubectl taint node k8s-master node-role.kubernetes.io/master:NoSchedule+
+  538  kubectl scale deployment nginx --replicas=5
+  539  kubectl get pod -n default -o wide
+  540  uptime 
+  541  kubectl get pod -n default -o wide
+  542  htop
+  543  kubectl taint node k8s-node0 key1=value=NoSchedule 
+  544  kubectl taint node k8s-node0 key1=value1=NoSchedule 
+  545  kubectl taint node k8s-node0 key1=value1:NoSchedule 
+  546  kubectl describe node k8s-node0 |grep -i taint
+  547  kubectl scale deployment nginx --replicas=1
+  548  kubectl get pods -o wide
+  549  kubectl scale deployment nginx --replicas=2
+  550  kubectl get pods -o wide
+  551  kubectl taint node k8s-node0 key1:NoSchedule- 
+  552  kubectl get pods -o wide
+  553  htop
+  554  kubectl taint node k8s-master key1=value1:NoSchedule 
+  555  kubectl scale deployment nginx --replicas=3
+  556  kubectl get pods -o wide
+  557  htop
+  558  kubectl taint node k8s-node1 key1=value1:NoExecute  
+  559  kubectl get pods -o wide
+  560  kubectl get pods -o wide --watch
+  561  kubectl taint node k8s-node1 key1:NoExecute-
+  562  htop
+  563  kubectl taint node --all key1:NoExecute-
+  564  kubectl taint node --all key1:Schedule-
+  565  kubectl taint node --all key1:NoSchedule-
+  566  kubectl taint node k8s-master key1=value1:NoSchedule 
+  567  htop
+  568  kubectl taint node --all key1:NoSchedule-
+  569  kubectl taint node k8s-master node-role.kubernetes.io/master:NoSchedule
+  570  kubectl taint node k8s-master node-role.kubernetes.io=master:NoSchedule
+  571  kubectl describe node k8s-master |grep -i taint
+  572  htop
+  573  kubectl get nodes
+  574  kubectl get ep
+  575  kubectl get svc --all-namespaces 
+  576  kubectl get ep
+  577  kubectl describe ep
+  578  htop
+  579  ls -lhrt
+  580  less first_service_yml.yaml
+  581  less first_yml.yaml 
+  582  kubectl get pod --all-namespaces 
+  583  kubectl get deployment --all-namespaces 
+  584  kubectl delete deployments -n kube-system alb-ingress-controller 
+  585  kubectl get pod --all-namespaces 
+  586  kubectl top nodes
+  587  htop
+  588  kubectl get svc --all-namespaces 
+  589  kubectl delete svc nginx-load-balancer -n default 
+  590  kubectl get svc --all-namespaces 
+  591  kubectl get deployments
+  592  kubectl delete deployments nginx 
+  593  kubectl run nginx --image=nginx --port=80 
+  594  kubectl get deployments
+  595  kubectl get deployments nginx -o yaml > deployment-limitado.yaml 
+  596  vi deployment-limitado.yaml 
+  597  hyop
+  598  htop
+  599  vi deployment-limitado.yaml 
+  600  htop
+  601  vi deployment-limitado.yaml 
+  602  htop
+  603  vi deployment-limitado.yaml 
+  604  htop
+  605  kubectl delete deployments nginx 
+  606  kubectl create -f deployment-limitado.yaml 
+  607  kubectl describe deployments nginx-limitado 
+  608  ls
+  609  vi pod_limitrange-hml.yaml
+  610  vu namespace-limitando-recursos-hml.yaml
+  611  vi namespace-limitando-recursos-hml.yaml
+  612  history 
+  613  vi deployment-limitado.yaml 
+  614  ls -lhrt
+  615  vi first_service_yml_load-balancer.yaml 
+  616  w
+  617  kubectl get nodes
+  618  kubectl get nodes -o wide
+  619  ls -lhrt
+  620  vi first_yml.yaml 
+  621  vi first_deployment.yaml 
+  622  ls -lhrt
+  623  vi first_deployment.yaml 
+  624  kubectl get nodes
+  625  kubectl get nodes --watch 
+  626  ls -lhrt
+  627  kubectl get pod --all-namespaces 
+  628  ls
+  629  vi deployment-limitado.yaml
+  630  ls -lhrt
+  631  vi first_deployment.yaml 
+  632  kubectl create -f first_deployment.yaml 
+  633  kubectl get deployment --all-namespaces 
+  634  kubectl get pods --all-namespaces 
+  635  kubectl describe deployment my-first-deployment -n kube-system 
+  636  kubectl describe deployments my-first-deployment -n default 
+  637  kubectl get rs --all-namespaces 
+  638  kubectl describe rs -n default my-first-deployment-77d6f5f769 
+  639  kubectl get pods 
+  640  kubectl get pods -o wide
+  641  cp first_deployment.yaml second_deployment.yaml 
+  642  vi second_deployment.yaml 
+  643  kubectl create -f second_deployment.yaml 
+  644  kubectl get deployment --all-namespaces 
+  645  kubectl get deployment --all-namespaces  --watch
+  646  kubectl get namespaces 
+  647  kubectl get pod --all-namespaces 
+  648  kubectl top node
+  649  kubectl get hpa --all-namespaces 
+  650  kubectl get ing --all-namespaces 
+  651  kubectl get svc --all-namespaces 
+  652  ]]
+  653  kubectl get deployment 
+  654  kubectl describe deploy my-second-deployment 
+  655  ls
+  656  vi second_deployment.yaml 
+  657  kubectl describe deployment first_deployment |grep -i labels
+  658  kubectl describe deployments first_deployment |grep -i labels
+  659  kubectl describe deployments my_first_deployment |grep -i labels
+  660  kubectl describe deployments my-first-deployment |grep -i labels
+  661  kubectl get pods -l dc=NVI
+  662  kubectl get pods -l dc=SP
+  663  kubectl get pods -l dc
+  664  kubectl get pods -L dc
+  665  kubectl label node k8s-node0 disk=SSD
+  666  kubectl get pods -L dc -o wide
+  667  kubectl label node k8s-node1 dc=SP
+  668  kubectl label node k8s-node0 disk=SSD --overwrite 
+  669  kubectl get pods -L dc -o wide
+  670  kubectl label node k8s-node1 disk=SDA 
+  671  kubectl label nodes k8s-node --list
+  672  kubectl label nodes k8s-node0 --list
+  673  kubectl label nodes k8s-node1 --list
+  674  kubectl label nodes k8s-master --list
+  675  kubectl label deployment --list 
+  676  kubectl label deployment --list --all
+  677  cp second_deployment.yaml third_deployment.yaml
+  678  ls -lhrt
+  679  vi third_deployment.yaml 
+  680  kubectl label nodes k8s-node1 --list
+  681  kubectl label nodes k8s-node0 --list
+  682  vi third_deployment.yaml 
+  683  ls -lhrt
+  684  kubectl create -f third_deployment.yaml 
+  685  vi third_deployment.yaml 
+  686  kubectl get deploy
+  687  kubectl describe deploy my-third-deployment 
+  688  kubectl describe deploy my-third-deployment -o wide
+  689  kubectl get pod -o -wide
+  690  kubectl get pod -o -wide --all-namespaces 
+  691  kubectl get pod --all-namespaces -o wide
+  692  kubectl get pod -o wide
+  693  kubectl label node k8s-node0
+  694  kubectl label node k8s-node0 --list 
+  695  kubectl label deploy my-third-deployment --list
+  696  ls l
+  697  lslslsl
+  698  s
+  699  lalasd
+  700  va
+  701  s
+  702  sa
+  703  vas
+  704  vasdvsvasdv
+  705  kskADMFSVSDVNASVSDV
+  706  ASVASV
+  707  S
+  708  LS -LHRT
+  709  l s-lhrt
+  710  ls -lrht
+  711  kubectl label deployment --list 
+  712  kubectl label deployment --list --al
+  713  kubectl label deployment --list --all
+  714  ls
+  715  ls -lhrt
+  716  vi first_service_yml.yaml
+  717  vi first_service_yml_node-port.yaml
+  718  kubectl  get svc --all-namespaces 
+  719  kubectl create -f first_service_yml_node-port.yaml
+  720  kubectl  get svc --all-namespaces 
+  721  uptime 
+  722  curl -ivk www.dabliucosta.com.br
+  723  whois www.dabliucosta.com.br
+  724  apt-get install whois
+  725  whois www.dabliucosta.com.br
+  726  host dabliucosta.com.br
+  727  host www.dabliucosta.com.br
+  728  kubectl create -f first_service_yml_node-port.yaml
+  729  uptime 
+  730  kubectl label deployment --list 
+  731  kubectl label deployment --list -all
+  732  kubectl label deployment --list --all
+  733  kubectl 
+  734  ls
+  735  vi first_service_yml
+  736  vi first_service_yml.yaml 
+  737  vi first_service_yml_node-port.yaml
+  738  ls
+  739  vi first_deployment.yaml
+  740  vi second_deployment.yaml 
+  741  vi third_deployment.yaml 
+  742  ifconfig 
+  743  w
+  744  kubectl  get nodes --all-namespaces 
+  745  htop
+  746  ls -lhrt
+  747  vi third_deployment.yaml 
+  748  kubectl get labels
+  749  kubectl get labels --all-namespaces 
+  750  history |grep label
+  751  kubectl label deployment --list
+  752  kubectl label deployment --list --all-namespaces
+  753  kubectl label deployment --list
+  754  kubectl label deployment --list --all
+  755  vi third_deployment.yaml 
+  756  kubectl get deploy -all-namespaces
+  757  kubectl get deploy --all-namespaces
+  758  kubectl label nodes k8s-node0 --list
+  759  htop
+  760  kubectl label --all dc-
+  761  kubectl label nodes --all dc-
+  762  kubectl label nodes --all disk-
+  763  kubectl get pods -o wide
+  764  kubectl delete deploy -n default my-third-deployment 
+  765  htop
+  766  q
+  767  kubectl pods -l dc=SP
+  768  kubectl get pods -l dc=SP
+  769  kubectl get pods -l dc=NVI
+  770  kubectl get rs 
+  771  htop
+  772  l s-lhrt
+  773  kubectl  get nodes 
+  774  kubectl get pod --all-namespaces 
+  775  ls -lhrt
+  776  vi first_replica-set_yml.yaml 
+  777  ls -lhrt
+  778  vi first_replica-set_yml.yaml 
+  779  kubectl create -f first_replica-set_yml.yaml 
+  780  vi first_replica-set_yml.yaml 
+  781  kubectl create -f first_replica-set_yml.yaml 
+  782  kubectl get rs --all-namespaces 
+  783  kubectl  get pod --all-namespaces 
+  784  kubectl get rs --all-namespaces 
+  785  kubectl describe rs -n default first-replica-set 
+  786  kubectl  get rs --namespace=default 
+  787  kubectl get pod -n default 
+  788  kubectl delete pod first-replica-set-xqnf4 -n default 
+  789  kubectl get pod -n default 
+  790  kubectl describe rs -n default first-replica-set 
+  791  kubectl edit rs -n default first-replica-set 
+  792  kubectl describe rs -n default first-replica-set 
+  793  kubectl describe rs -n default first-replica-set  --watch
+  794  kubectl describe rs -n default first-replica-set
+  795  kubectl get pod -n default 
+  796  kubectl describe rs -n default first-replica-set
+  797  kubectl 
+  798  ls -lhrt
+  799  kubectl get rs -o wide
+  800  kubectl get pod -n defaul -o wide
+  801  kubectl get pod --all-namespaces -o wide
+  802  kubectl describe pod first-replica-set-6p7n4 -n default 
+  803  kubectl delete pod first-replica-set-6p7n4 -n default 
+  804  kubectl describe pod first-replica-set-6p7n4 -n default 
+  805  kubectl get pod --all-namespaces -o wide
+  806  kubectl describe first-replica-set-x26lh -n default 
+  807  kubectl describe pod  first-replica-set-x26lh -n default 
+  808  vi first_daemon-set.yml.yaml
+  809  cat first_replica-set_yml.yaml > first_daemon-set-yml.yaml
+  810  vi first_daemon-set-yml.yaml 
+  811  ls -lhrt
+  812  kubectl get ds --all-namespaces 
+  813  kubectl get ds --all-namespaces -o wide
+  814  kubectl create -f first_daemon-set-yml.yaml 
+  815  vi first_daemon-set-yml.yaml 
+  816  kubectl create -f first_daemon-set-yml.yaml 
+  817  kubectl get pod -n default 
+  818  kubectl get pod -n default -o wide
+  819  kubectl get ds
+  820  kubectl get ds 
+  821  kubectl set image ds first-daemon-set nginx=:1.7.9
+  822  kubectl describe ds first-daemon-set 
+  823  kubectl get pod -o wide
+  824  kubectl describe pod first-daemon-set-5nbln
+  825  kubectl delete pod first-daemon-set-5nbln
+  826  kubectl get pod -o wide
+  827  kubectl set image ds first-daemon-set nginx=1.7.9
+  828  kubectl get pod -o wide
+  829  kubectl delete pod first-daemon-set-pqhvk
+  830  kubectl get pod -o wide
+  831  kubectl delete pod first-daemon-set-qb7q4
+  832  kubectl get pod -o wide
+  833  kubectl set image ds first-daemon-set nginx=1.15.0
+  834  kubectl set image ds first-daemon-set nginx=nginx:1.7.9
+  835  kubectl get pod -o wide
+  836  kubectl delete  pod first-daemon-set-blk94
+  837  kubectl get pod -o wide
+  838  kubectl describe pod first-daemon-set-bln96
+  839  kubectl set image ds first-daemon-set nginx=nginx:1.15.0
+  840  kubectl describe pod first-daemon-set-bln96
+  841  kubectl get pod -n default 
+  842  kubectl delete pod first-daemon-set-bpxbc
+  843  kubectl get pod -n default 
+  844  kubectl describe first-daemon-set-kz24n
+  845  kubectl describe pod  first-daemon-set-kz24n
+  846  kubectl rollout history daemonset first-daemon-set 
+  847  kubectl rollout history daemonset first-daemon-set --revision=6
+  848  kubectl rollout history daemonset first-daemon-set --revision=5
+  849  kubectl rollout undo daemonset first-daemon-set --to-revision=5
+  850  kubectl describe ds first-daemon-set 
+  851  kubectl get pod -n default 
+  852  w
+  853  htop
+  854  history 
+  855  vi first_daemon-set-yml.yaml 
+  856  cp first_daemon-set-yml.yaml second_daemon-set-yml.yaml 
+  857  vi second_daemon-set-yml.yaml 
+  858  kubectl delete daemonset first-daemon-set 
+  859  kubectl create -f second_daemon-set-yml.yaml 
+  860  kubectl get ds 
+  861  kubectl get pod --all-namespaces 
+  862  kubectl describe ds second-daemon-set 
+  863  kubectl set image ds second-daemon-set nginx=nginx:1.15.0
+  864  kubectl describe ds second-daemon-set 
+  865  kubectl rollout status daemonset second-daemon-set 
+  866  kubectl delete ds second-daemon-set 
+  867  kubectl delete rs first-replica-set 
+  868  kubectl get deploy --all-namespaces 
+  869  vi first_deployment.yaml 
+  870  ls -lhrt
+  871  vi first_yml.yaml 
+  872  kubectl get deploy -n --all-namespaces 
+  873  kubectl get deploy  --all-namespaces 
+  874  kubectl edit deploy -n default my-first-deployment
+  875  kubectl get deploy -n default my-first-deployment -o yaml > my-fouth-deployment.yaml 
+  876  vi my-fouth-deployment.yaml 
+  877  kubectl create -f my-fouth-deployment.yaml 
+  878  kubectl get deploy -n default 
+  879  kubectl delete deploy -n default nginx
+  880  kubectl get deploy -n default 
+  881  ls -lhrt
+  882  kubectl get pod --all-namespaces 
+  883  kubectl get rs 
+  884  kubectl get rs --all-namespaces 
+  885  kubectl set image deployment nginx-novo nginx=nginx:1.15.0
+  886  kubectl get deploy --all-namespaces 
+  887  kubectl set image deployment nginx-novo nginx=nginx:1.15.0 -n default 
+  888  vi my-fouth-deployment.yaml 
+  889  kubectl delete deploy -n default nginx-novo 
+  890  kubectl create f my-fouth-deployment.yaml 
+  891  kubectl create -f my-fouth-deployment.yaml 
+  892  kubectl set image deployment nginx-novo nginx=nginx:1.15.0 
+  893  kubectl rollout status deployment nginx-novo 
+  894  kubectl rollout history deployment nginx-novo 
+  895  kubectl edit deployment nginx-novo 
+  896  kubectl rollout status deployment nginx-novo 
+  897  kubectl set image deployment nginx-novo nginx=nginx:1.7.9
+  898  htop
+  899  kubectl  get pod --all-namespaces 
+  900  vi .bashrc 
+  901  htop
+  902  w
+  903  uptime 
+  904  kubectl get nodes|grep -i taint
+  905  kubectl get nodes|grep -i taints
+  906  kubectl get nodes
+  907  kubectl describe nodes |grep taint
+  908  kubectl describe nodes |grep -i taint
+  909  history |grep list
+  910  kubeadm token list --print-join-command
+  911  kubeadm token list --print
+  912  history |grep kubeadm
+  913  history |grep join
+  914  ls -lhrt
+  915  w
+  916  ls -lhrt
+  917  w
+  918  kubectl get --all-namespaces 
+  919  kubectl get pod  --all-namespaces 
+  920  htop
+  921  apt-get install -y nfs-kernel-server 
+  922  ]]]]
+  923  ]
+  924  htop
+  925  mkdir /opt/dados
+  926  chmod 1777 /opt/dados/
+  927  vi /etc/exports 
+  928  ps -ef|grep vi
+  929  kill -9 2002
+  930  ps -ef|grep vi
+  931  rm -rf /etc/.exports.swp 
+  932  vi /etc/exports 
+  933  htop
+  934  mount
+  935  kubectl get namespaces 
+  936  kubectl get pod --all-namespaces 
+  937  kubectl get nodes
+  938  ls -lhrt
+  939  vi my-fouth-deployment.yaml 
+  940  history |grep Schedule
+  941  history |grep Execute
+  942  kubectl get pod --all-namespaces 
+  943  ls -lhrt
+  944  vi my-pod-empty-dir-volume-yml.yaml 
+  945  kubectl get namespaces 
+  946  vi my-pod-empty-dir-volume-yml.yaml 
+  947  kubectl create -f my-pod-empty-dir-volume-yml.yaml 
+  948  kubectl get pod --all-namespaces 
+  949  kubectl get pod 
+  950  kubectl get pod -n dev
+  951  kubectl exec -ti busybox -c busy sh 
+  952  kubectl exec -ti busybox -c busy -- sh 
+  953  kubectl exec -ti busybox -c busy -- sh -n dev
+  954  kubectl exec -it busybox -c busy --sh -n dev
+  955  kubectl exec -it busybox -c busy -- sh -n dev
+  956  kubectl get pod -n dev
+  957  kubectl exec -it busybox sh
+  958  kubectl exec -it busybox sh -n dev
+  959  kubectl exec -it busybox touch /dados/teste.txt -n dev
+  960  kubectl exec -it busybox sh -n dev
+  961  ls -lhrt
+  962  less my-pod-empty-dir-volume-yml.yaml 
+  963  kubectl get pod -n dev -o wide
+  964  kubectl get pod -n dev -o wide --watch
+  965  w
+  966  ls -lhrt
+  967  vi third_deployment.yaml
+  968  vi first_service_yml.yaml
+  969  vi first_service_yml_node-port.yaml
+  970  vi first_yml.yaml
+  971  vi first_service_yml.yaml
+  972  kubectl get svc --all-namespaces 
+  973  kubectl edit svc -n default coy-oyster-metrics-server
+  974  vi first_service_yml.yaml
+  975  kubectl label --all
+  976  kubectl label --all-namespaces
+  977  history |grep label
+  978  history |grep labelkubectl label deployment --list
+  979  kubectl label deployment --list
+  980  kubectl label deployment --list --all
+  981  ls
+  982  vi first_service_yml
+  983  vi first_service_yml.yaml 
+  984  kubectl get pods --all-namespaces
+  985  ls -lhrt
+  986  vi first_deployment.yaml 
+  987  vi second_deployment.yaml 
+  988  vi third_deployment.yaml 
+  989  vi my-fouth-deployment.yaml 
+  990  vi deployment-limitado.yaml 
+  991  kubectl get hpa --all-namespaces 
+  992  history |grep label
+  993  kubectl label --all-namespaces
+  994  kubectl label --all-namespaces --all
+  995  kubectl label deployment --all
+  996  kubectl label nodes k8s-master --list
+  997  kubectl top nodes
+  998  kubectl get nodes
+  999  kubectl get deployments --all-namespaces 
+ 1000  kubectl get pod --all-namespaces 
+ 1001  kubectl describe pod coy-oyster-metrics-server-6db7f86cc4-b2zp7 -n default 
+ 1002  kubectl get pod -n default
+ 1003  kubectl delete pod coy-oyster-metrics-server-6db7f86cc4-89lg7 -n default
+ 1004  kubectl delete pod coy-oyster-metrics-server-6db7f86cc4-b2zp7 -n default
+ 1005  kubectl get pod -n default
+ 1006  vi /etc/exports 
+ 1007  ls -lhrt /opt/
+ 1008  history 
+ 1009  history |grep nfs
+ 1010  htop
+ 1011  exportfs -ar 
+ 1012  touch /opt/dados/FUNCIONA
+ 1013  htop
+ 1014  ifconfig 
+ 1015  htop
+ 1016  ls -lhrt
+ 1017  vi my-first-pv-yml.yaml 
+ 1018  fg
+ 1019  ls -lhrt
+ 1020  vi my-first-pv-yml.yaml 
+ 1021  ls -lhrt /opt/
+ 1022  vi my-first-pv-yml.yaml 
+ 1023  htop
+ 1024  kubectl create -f my-first-pv-yml.yaml 
+ 1025  kubectl get pv --all-namespaces 
+ 1026  kubectl describe pv primeiro-pv 
+ 1027  htop
+ 1028  vi my-first-pvc-yml.yaml 
+ 1029  ls -lhrt
+ 1030  w
+ 1031  htop
+ 1032  kubectl create -f my-first-pvc-yml.yaml 
+ 1033  kubectl get pv --all-namespaces 
+ 1034  kubectl describe pv primeiro-pv 
+ 1035  kubectl describe pvc primeiro-pv 
+ 1036  kubectl describe pvc primeiro-pvc 
+ 1037  kubect get pvc 
+ 1038  kubectl get pvc --all-namespaces 
+ 1039  htop
+ 1040  vi my-first-nfs-pv-yml.yaml 
+ 1041  ls -lhrt
+ 1042  htop
+ 1043  vi my-first-nfs-pv-yml.yaml 
+ 1044  htop
+ 1045  kubectl create -f my-first-nfs-pv-yml.yaml
+ 1046  vi my-first-nfs-pv-yml.yaml 
+ 1047  kubectl create -f my-first-nfs-pv-yml.yaml
+ 1048  vi my-first-nfs-pv-yml.yaml 
+ 1049  kubectl create -f my-first-nfs-pv-yml.yaml
+ 1050  vi my-first-nfs-pv-yml.yaml 
+ 1051  kubectl create -f my-first-nfs-pv-yml.yaml
+ 1052  vi my-first-nfs-pv-yml.yaml 
+ 1053  kubectl create -f my-first-nfs-pv-yml.yaml
+ 1054  kubectl get deploy -n default
+ 1055  kubectl describe deploy nginx -n default
+ 1056  kubectl run -it nginx-6cf5585896 bash
+ 1057  kubectl run -it nginx-6cf5585896 bash -n default
+ 1058  kubectl get pod -n default
+ 1059  kubectl exec -i -t nginx-6cf5585896-s5h9f bash
+ 1060  htop
+ 1061  kubectl get pv --all-namespaces 
+ 1062  kubectl get pvc --all-namespaces 
+ 1063  mount
+ 1064  w
+ 1065  ls -lhrt
+ 1066  w
+ 1067  mount
+ 1068  ls -lhrt
+ 1069  git init 
+ 1070  git config user.email julio.ferraz@gmail.com
+ 1071  git config user.name julio.ferraz
+ 1072  ls -lhrt
+ 1073  ls -lhrta
+ 1074  htop
+ 1075  echo "# learning-k8s-yamls" >> README.md
+ 1076  git commit -m "my yamls first commit"
+ 1077  ls -lhrt
+ 1078  git add *.yaml
+ 1079  git commit -m "my yamls first commit"
+ 1080  git remote add origin https://github.com/jcsferraz/learning-k8s-yamls.git
+ 1081  git push -u origin master
+ 1082  ls -lhrt
+ 1083  history > lesson_history_01-07-2019.txt 
